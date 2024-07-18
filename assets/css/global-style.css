@@ -1,0 +1,558 @@
+:root {
+    --cool-blue-bg-color: #F8F3E9;
+    --main-text-color: #2D4768;
+}
+
+.font-family-roboto {
+    font-family: "Roboto", sans-serif;
+}
+.yellow.gradient-bg-color {
+    background: linear-gradient(to right, #DDB762 0%, #000000 100%);
+}
+.linear-main-bg-color {
+    background: linear-gradient(136.97deg, #DDB762 3.34%, #000000 225.23%);
+}
+.main-shadow-effect {
+    box-shadow: 0px 5px 14px 0px #0000000D;
+}
+.font-size-14 {
+    font-size: 14px;
+}
+.font-size-24 {
+    font-size: 24px;
+}
+main {
+    width: 100%;
+    height: auto;
+}
+.main-text-color {
+    color: var(--main-text-color);
+}
+.main-header {
+    width: 100%;
+    height: 181px;
+    background-color: var(--cool-blue-bg-color);
+    z-index: 1111;
+    position: relative;
+}
+
+.main-header-container {
+    width: 100%;
+    padding: 27px 65px 24px 95px;
+}
+.main-header-container .navigation {
+    width: 39%;
+}
+.main-header-container .navigation nav ul {
+    padding: 0;
+}
+.main-header-container .navigation nav ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-text-color);
+}
+.header-drop-down {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    background-color: #fff;
+    width: 300px;
+    border-radius: 13.5px;
+    box-shadow: 0px 1.25px 2.5px 0px #00000040;
+    display: visible;
+}
+.header-drop-down.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+.header-drop-down.hidden {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+.header-drop-down nav ul {
+    padding-top: 5px;
+}
+.header-drop-down nav ul li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px;
+    color: #262527;
+
+}
+.drop-down-span {
+    background-color: #EBF3F7;
+    color: #08548A !important;
+    border-radius: 10px;
+    padding: 5px 33px !important;
+
+}
+.header-drop-down nav ul li a:hover{
+    background-color: #00000008;
+}
+.main-header-container .navigation .search-bar {
+    height: 50px;
+    position: relative;
+    margin: 30px 30px 0;
+}
+.main-header-container .navigation .search-bar input {
+    border: 0.5px solid #E2E8F0 !important;
+    border-radius: 8px;
+    padding-right: 75px !important;
+}
+.main-header-container .navigation .search-bar .absolute-icon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    right: 8px;   
+}
+.main-side-bar {
+    width: 265px;
+    overflow: scroll;
+    direction: ltr;
+    background-color: #fff;
+}
+.main-side-bar  > * {
+    direction: rtl;
+}
+.main-header .logo{
+    width: 265px;
+}
+.main-side-bar .main-side-bar-content {
+    box-shadow: 0px 5px 14px 0px #0000000D;
+    padding-top: 190px;
+}
+.main-side-bar .main-side-bar-content nav ul li {
+    /* padding: 10px 0; */
+}
+.main-side-bar .main-side-bar-content nav ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+}
+.main-side-bar .main-side-bar-content nav ul li a.active {
+    background: linear-gradient(136.97deg, #DDB762 3.34%, #000000 225.23%) !important;
+    padding-right: 30px;
+    margin: 8px 0;
+}
+.main-side-bar .main-side-bar-content nav ul li a.active span{
+    color: #fff !important;
+}
+
+.sidebar-icon {
+    padding-left: 12px;
+}
+
+.side-bar-dropdown nav ul li{
+    padding-right: 38px !important;
+    padding-left: 20px !important;
+}
+.side-bar-dropdown nav ul li a{
+    padding: 2px !important;
+    margin: 20px 0;
+    color: #2D4768;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: 0.4s;
+}
+.side-bar-dropdown nav ul li a:hover{
+    background-color: #F1E7D1;
+}
+.side-bar-dropdown nav ul li a.selected {
+    background-color: #F1E7D1;
+}
+.dynamic-content {
+    width: calc(100% - 265px);
+    margin-right: auto;
+    height: 200vh;
+    padding: 0 64px 40px;
+}
+.dynamic-content .dashboard-cards {
+    margin-bottom: 80px;
+}
+.dynamic-content .dashboard-cards .dashboard-card {
+    text-align: center;
+    
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 5px 14px 0px #0000000D;
+}
+.dynamic-content .dashboard-cards .dashboard-card-icon {
+    margin: 0 auto 15px;
+    width: 64px;
+    padding: 15px;
+
+}
+.dynamic-content .dashboard-cards .dashboard-card-separater {
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.326);
+    margin: 20px 0;
+}
+.dynamic-content .dashboard-cards .dashboard-card-counter {
+    font-size: 22px;
+}
+.dynamic-content .dashboard-table-container {
+    width: 100% ;
+    overflow-x: auto;
+    height: auto;
+}
+.dynamic-content  .dashboard-main-table {
+    width: max-content !important;
+    min-width: 100%;
+}
+.dynamic-content  .dashboard-main-table thead{
+    background: linear-gradient(136.97deg, #DDB762 3.34%, #000000 225.23%);
+}
+.dynamic-content  .dashboard-main-table thead th {
+    position: relative;
+    color: #fff;
+    padding: 14px 28px;
+    text-align: center;
+}
+.dynamic-content  .dashboard-main-table thead th:not(:last-child)::before {
+    content: '';
+    width: 1px;
+    height: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 0;
+    background-color: #fff;
+}
+.dynamic-content  .dashboard-main-table tbody tr td {
+    padding: 31px;
+    max-width: 300px;
+    border-bottom: 1px solid #E9EFF4;
+    border-left: 1px solid #E9EFF4;
+    border-right: 1px solid #E9EFF4;
+    border-collapse: collapse;
+}
+.dashboard-small-title h4{
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+.margin-bottom-60-px {
+    margin-bottom: 60px;
+}
+.font-size-12 {
+    font-size: 12px;
+}
+.font-size-15 {
+    font-size: 12px;
+}
+.table-active-row {
+    color: #159412;
+    background-color: #DDF5DC;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+.empty-table {
+    border-bottom: 1px solid #E9EFF4;
+    border-left: 1px solid #E9EFF4;
+    border-right: 1px solid #E9EFF4;
+}
+.dashboard-graphic-size {
+    width: 100%;
+    height: 11px;
+    background-color: #D9D9D9;
+    margin: 5px auto 0;
+}
+.dashboard-graphic-size span{
+    width: 34%;
+    display: block;
+    height: 100%;
+    background-color: #17A714;
+}
+.dashboard-statistique {
+    margin-top: 48px;
+    padding: 80px 30px;
+}
+.large-btn {
+    width: 160px;
+    height: 45px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(136.97deg, #DDB762 3.34%, #000000 225.23%);
+    box-shadow: 0px 2px 4px -2px #1018280F;
+    box-shadow: 0px 4px 8px -2px #1018281A;
+}
+.large-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 2.5;
+}
+.rounded-input-field {
+    height: 45px;
+    border-radius: 8px;
+    border: 0.5px solid #E2E8F0;
+    padding-right: 42px;
+}
+.dynamic-content .search {
+    margin-bottom: 66px;
+}
+.add-important-link {
+    padding: 90px 50px 0;
+}
+.checkbox-size {
+    width: 20px;
+    height: 20px;
+}
+.form-label {
+    font-size: 16px;
+}
+.input-field {
+    height: 36px;
+    padding-right: 24px;
+    border: 0.78px solid #E9EAF0;
+}
+.input-field::placeholder {
+    color: #8C94A3;
+}
+.font-size-10 {
+    font-size: 10px;
+}
+.gray-color {
+    color: #8C94A3;
+}
+.disabled-btn {
+    background: #B0B0B0 !important; 
+}
+.disabled-btn a {
+    color: #8d8d8d !important;
+}
+.light-btn {
+    box-shadow: 0px 2px 4px -2px #1018280F !important;
+    box-shadow: 0px 4px 8px -2px #1018281A !important;
+    background: #fff !important;
+}
+.light-btn a{
+    color: #2C4768;
+}
+.pagination {
+    margin-top: 90px;
+}
+.small-btn {
+    min-width: 100px;
+    height: 36px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(136.97deg, #DDB762 3.34%, #000000 225.23%);
+    box-shadow: 0px 2px 4px -2px #1018280F;
+    box-shadow: 0px 4px 8px -2px #1018281A;
+    font-weight: bold;
+}
+.small-btn a{
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 2.95;
+}
+.pagination-number-btn {
+    min-width: 36px;
+    height: 36px;
+    background: #fff !important;
+    margin: 0 9px;
+}
+.pagination-number-btn a {
+    color: #000000;
+}
+.pagination-number-btn.active {
+    background: linear-gradient(136.97deg, #DDB762 3.34%, #000000 225.23%) !important;
+    
+}
+.pagination-number-btn.active a {
+    color: white;
+}
+
+.add-documents {
+    padding: 80px 80px 0;
+}
+
+.margin-top-41 {
+    margin-top: 41px;
+}
+
+.table-danger-span {
+    background: #FA8386;
+    color: #9F1114;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.pop-up-window {
+    width: 100%;
+    height: 100vh;
+    background: #00000066;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pop-up-window .window {
+    width: auto;
+    height: auto;
+    background: #fff;
+    padding: 30px 50px 30px 60px;
+    border-radius: 12px;
+}
+.window-input-field {
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid #C4C4C4;
+    padding: 0 20px;
+}
+
+.table-drop-down {
+    width: 150px;
+    top: 30px;
+    right: -30px;
+    box-shadow: 0px 4px 10px 0px #00000026;
+    background: #fff;
+    z-index: 11111;
+    border-radius: 4px;
+}
+.table-drop-down nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.table-drop-down nav ul li a {
+    text-decoration: none;
+    color: #2B4868;
+    padding: 12px 15px 12px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: 1px solid #E9EFF4;
+}
+
+.table-drop-down nav ul li a span{
+}
+.table-drop-down-icon {
+    padding-left: 20px;
+}
+
+
+
+
+/******************** Start Modern Check Box ************************/
+
+.checkbox-wrapper-3 input[type="checkbox"] {
+    visibility: hidden; display: none;
+} 
+.checkbox-wrapper-3 .toggle {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+} 
+.checkbox-wrapper-3 .toggle:before {
+    content: "";
+    position: relative;
+    top: 4px;
+    left: 3px;
+    width: 34px;
+    height: 14px;
+    display: block;
+    background: #D9D9D9;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+.checkbox-wrapper-3 .toggle span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    display: block;
+    background: #2C4768;
+    border-radius: 50%;
+    box-shadow: 0 3px 8px rgba(154, 153, 153, 0.5);
+    transition: all 0.2s ease;
+} 
+.checkbox-wrapper-3 .toggle span:before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: -18px;
+    width: 56px;
+    height: 56px;
+    background: rgba(79, 46, 220, 0.5);
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 1;
+    pointer-events: none;
+} 
+.checkbox-wrapper-3 #cbx-3:checked + .toggle:before,.checkbox-wrapper-3 #cbx-4:checked + .toggle:before {
+    background: #767676;
+}
+.checkbox-wrapper-3 #cbx-3:checked + .toggle span, .checkbox-wrapper-3 #cbx-4:checked + .toggle span {
+    background: #DDB762;
+    transform: translateX(25px);
+    transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease;
+    box-shadow: 0 3px 8px rgba(79, 46, 220, 0.2);
+} 
+.checkbox-wrapper-3 #cbx-3:checked + .toggle span:before, .checkbox-wrapper-3 #cbx-4:checked + .toggle span:before {
+    transform: scale(1);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+/******************** End Modern Check Box ************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1300px) {
+    .dynamic-content {
+        width: 100%;
+    }
+    .main-side-bar {
+        display: none;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .center-on-768 {
+        justify-content: center !important;
+    }
+    .dynamic-content {
+        padding: 60px 25px 40px;
+    }
+    .space-on-mobile {
+        padding: 20px 12px 0 !important;
+    }
+}
+
